@@ -1,6 +1,6 @@
 package com.example.kmmapp.bloggers
 
-import android.net.Uri
+import java.io.Serializable
 
 data class Blogger (
     var imageURL: String,
@@ -8,4 +8,4 @@ data class Blogger (
     var realName: String,
     var age: Int,
     var description: String
-)
+) : Serializable

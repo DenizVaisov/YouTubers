@@ -11,9 +11,6 @@ class BloggerHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     fun bind(blogger: Blogger) {
         setImageURL(blogger, itemView)
         nickName.text = blogger.nickName
-//        realName.text = blogger.realName
-//        age.text = blogger.age.toString()
-//        description.text = blogger.description
     }
 
     fun setImageURL(blogger: Blogger, itemView: View) {
@@ -25,7 +22,4 @@ class BloggerHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
     var imageURL: ImageView =      itemView.findViewById(R.id.blogger_img)
     var nickName: TextView =    itemView.findViewById(R.id.blogger_nick_name)
-//    var realName: TextView =    itemView.findViewById(R.id.blogger_real_name)
-//    var age: TextView =         itemView.findViewById(R.id.blogger_age)
-//    var description: TextView = itemView.findViewById(R.id.blogger_description)
 }
